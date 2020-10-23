@@ -1,0 +1,74 @@
+How to Install Python 3.7 on CentOS/RHEL 7/6 & Fedora 32/31
+        Written by Rahul, Updated on September 18, 2020
+
+    Step 1 – Requirements
+        This Python installation required the GCC compiler on your system. Login to your server using ssh or shell access. Now, use the following command to install prerequisites for Python before installing it.
+
+        yum install gcc openssl-devel bzip2-devel libffi-devel zlib-devel
+        Read: How to Use SSH to Connect Remote Linux Server
+    Step 2 – Download Python 3.7
+        Download Python using the following command from the Python official site. You can also download the latest version in place of specified below.
+
+        cd /usr/src
+        wget https://www.python.org/ftp/python/3.7.9/Python-3.7.9.tgz
+        Now extract the downloaded package.
+
+        tar xzf Python-3.7.9.tgz
+    Step 3 – Install Python 3.7
+        Use below set of commands to compile Python source code on your system using altinstall.
+
+        cd Python-3.7.9
+        ./configure --enable-optimizations
+        make altinstall
+        make altinstall is used to prevent replacing the default python binary file /usr/bin/python.
+
+        Now remove downloaded source archive file from your system
+
+        rm /usr/src/Python-3.7.9.tgz
+    Step 4 – Check Python Version
+        Check the latest version installed of python. Use command python3.7 instead of just python.
+
+        python3.7 -V
+        Python 2.7.9
+        ln -s /usr/local/bin/python3.7 /bin/python3
+        python3 --version
+            Python 3.7.9
+        ln -s /usr/local/bin/pip3 /bin/pip3
+        pip3 --version  
+            pip 3....
+        python3
+        >> import boto3 
+            error: not found
+        pip3 install boto3
+        >> import boto3
+        >>
+     
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@
+    inShort:
+        yum install gcc openssl-devel bzip2-devel libffi-devel zlib-devel
+        cd /usr/src
+        wget https://www.python.org/ftp/python/3.7.9/Python-3.7.9.tgz
+        tar xzf Python-3.7.9.tgz
+        cd Python-3.7.9
+        ./configure --enable-optimizations
+        make altinstall
+        rm /usr/src/Python-3.7.9.tgz
+        python3.7 -V
+        Python 2.7.9
+        ln -s /usr/local/bin/python3.7 /bin/python3
+        python3 --version
+            Python 3.7.9
+        ln -s /usr/local/bin/pip3 /bin/pip3
+        pip3 --version  
+            pip 3....
+        python3
+        >> import boto3 
+            error: not found
+        pip3 install boto3
+        >> import boto3
+        >>
+     
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
