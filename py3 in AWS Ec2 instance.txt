@@ -68,7 +68,6 @@ How to Install Python 3.7 on CentOS/RHEL 7/6 & Fedora 32/31
         >> import boto3
         >>
      
-        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-
-
+        
