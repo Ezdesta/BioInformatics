@@ -3,7 +3,7 @@ Installing GUI Components:
     # yum groupinstall -y "Server with GUI"
     # systemctl set-default graphical.target
     # systemctl default
-
+        ###### NB much shroter way is in the otehr file for Ubuntu as well as for Linux 2 Servers
 Setting up XRDP:
     # rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm
     Setting up XRDP
