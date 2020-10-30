@@ -73,7 +73,7 @@ Installing Galaxy:
                         Configure
                         Since the release 18.01 Galaxy will run fine without an explicit configuration file, 
                         but if you want to modify its settings you need to create one. 
-                        A good start is to copy the sample and rename it to galaxy.yml. 
+                        A good start is to copy the sample and rename it to galaxy.yml. ((((( )))))).
                         You can do so with this command:
 
                         cp config/galaxy.yml.sample config/galaxy.yml
