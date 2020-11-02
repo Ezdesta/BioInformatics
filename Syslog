@@ -1,0 +1,18 @@
+Syslogs are messages or a diary about almost everything happen in the server or machine
+strarting from boot time till it terminate.
+    The syslog configuration file is : 
+        /etc/rsyslog.conf 
+        it tells what kind of log to be save in which file.
+        and other logging configuration 
+
+Syslog          ===> UDP whcich is unreleable
+syslog-ng       ===> with more features than Syslog
+rsyslog         ===> with more freatures and reliable whcich is TCP
+
+The log files are kept on :
+    /var/log 
+    example of log files are:
+        /var/log/auth.log    ===> security and authorization in Debian family
+        /var/log/secure      ===> security and authorization in Red Hat family
+        /var/log/kern.log    ===> Kernel messages
+        /var/log/dmesg       ===> system start up messages / bootup 
